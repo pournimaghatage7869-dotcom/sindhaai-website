@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SINDHAAI ENTERPRISES - Agricultural products, Bhagwa pomegranates, wholesale supply and export enquiries from Khanapur, Sangli, Maharashtra, India.">
+  <title>SINDHAAI ENTERPRISES | sindhaaienterprises.com</title>
+  <style>
+    :root {
+      --maroon: #4b1728;
+      --maroon-dark: #2d0d19;
+      --gold: #d7b56d;
+      --cream: #fbf7f0;
+      --ink: #282326;
+      --muted: #6f6669;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); line-height: 1.6; background: #fff; }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1120px, 92%); margin: auto; }
+    header { background: var(--maroon-dark); color: white; position: sticky; top: 0; z-index: 10; box-shadow: 0 2px 14px #0002; }
+    .nav { min-height: 76px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .brand { line-height: 1.05; }
+    .brand strong { display: block; color: var(--gold); font-size: 25px; letter-spacing: 3px; }
+    .brand span { font-size: 11px; letter-spacing: 4px; }
+    nav { display: flex; gap: 23px; align-items: center; font-size: 14px; }
+    nav a:hover { color: var(--gold); }
+    .menu-button { display: none; background: none; border: 1px solid #ffffff66; color: white; padding: 8px 11px; border-radius: 6px; }
+    .hero { color: white; background: radial-gradient(circle at 80% 30%, #8b4050 0, transparent 30%), linear-gradient(120deg, var(--maroon-dark), var(--maroon) 65%, #6d293b); padding: 100px 0 105px; }
+    .hero-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 45px; align-items: center; }
+    .eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: 3px; font-weight: bold; font-size: 12px; }
+    h1 { font-size: clamp(38px, 5vw, 62px); line-height: 1.08; margin: 15px 0 20px; }
+    .hero p { color: #f4e9e9; font-size: 18px; max-width: 620px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 28px; }
+    .btn { display: inline-block; padding: 13px 22px; border-radius: 6px; font-weight: bold; font-size: 14px; }
+    .btn-gold { background: var(--gold); color: #2c1720; }
+    .btn-outline { border: 1px solid #ffffff9c; color: white; }
+    .hero-art { min-height: 300px; border: 1px solid #ffffff35; border-radius: 22px; display: grid; place-items: center; background: linear-gradient(145deg, #ffffff18, #ffffff05); }
+    .fruit-mark { font-size: clamp(100px, 16vw, 175px); filter: drop-shadow(0 15px 18px #16050a66); }
+    section { padding: 76px 0; }
+    .section-heading { text-align: center; max-width: 700px; margin: 0 auto 38px; }
+    .section-heading h2 { color: var(--maroon); font-size: 32px; margin: 7px 0 10px; }
+    .section-heading p, .muted { color: var(--muted); }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { padding: 27px; border: 1px solid #eee5e6; border-radius: 12px; background: white; box-shadow: 0 8px 25px #3b15200a; }
+    .card-icon { font-size: 34px; }
+    .card h3 { color: var(--maroon); margin: 12px 0 7px; }
+    .about { background: var(--cream); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 45px; align-items: center; }
+    .about-panel { background: var(--maroon); color: white; border-radius: 16px; padding: 36px; }
+    .about-panel h3 { color: var(--gold); font-size: 25px; margin-top: 0; }
+    .checks { padding-left: 20px; }
+    .checks li { margin: 9px 0; }
+    .cta { background: var(--maroon); color: white; text-align: center; }
+    .cta h2 { font-size: 32px; margin: 0 0 10px; }
+    .cta p { color: #f0dfe4; }
+    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 35px; }
+    .contact-info { background: var(--cream); padding: 28px; border-radius: 12px; }
+    form { display: grid; gap: 13px; }
+    input, textarea, select { width: 100%; padding: 13px; border: 1px solid #ddd2d5; border-radius: 6px; font: inherit; }
+    textarea { min-height: 120px; resize: vertical; }
+    button.submit { border: 0; cursor: pointer; }
+    footer { background: var(--maroon-dark); color: #eee; padding: 27px 0; text-align: center; font-size: 13px; }
+    .note { font-size: 12px; color: var(--muted); margin-top: 12px; }
+    @media (max-width: 760px) {
+      .menu-button { display: block; }
+      nav { display: none; position: absolute; top: 76px; left: 0; right: 0; padding: 18px 4%; background: var(--maroon-dark); flex-direction: column; align-items: flex-start; }
+      nav.open { display: flex; }
+      .hero { padding: 70px 0; }
+      .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .hero-art { min-height: 190px; }
+      .cards { grid-template-columns: 1fr; }
+      section { padding: 58px 0; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home"><strong>SINDHAAI</strong><span>ENTERPRISES</span></a>
+    <button class="menu-button" id="menuButton" aria-label="Open navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#products">Products</a>
+      <a href="#supply">Supply & Export</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">From Nature to Your Home</div>
+        <h1>Freshness from Maharashtra. Connections across the world.</h1>
+        <p>SINDHAAI ENTERPRISES works with agricultural products and wholesale supply. We welcome enquiries from retailers, wholesalers, processors and importers.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="#products">Explore Products</a>
+          <a class="btn btn-outline" href="#contact">Send an Enquiry</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Pomegranate illustration"><div class="fruit-mark">🌱</div></div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div>
+        <div class="eyebrow">Who We Are</div>
+        <h2 style="color:var(--maroon);font-size:34px;line-height:1.2">A reliable link between growers and buyers</h2>
+        <p class="muted">Based in Maharashtra, India, SINDHAAI ENTERPRISES aims to connect quality agricultural produce with buyers through clear communication, dependable coordination and a customer-focused approach.</p>
+        <p class="muted">Our focus is to understand each buyer's specifications for quality, quantity, packaging and delivery before confirming a supply arrangement.</p>
+      </div>
+      <div class="about-panel">
+        <h3>Our approach</h3>
+        <ul class="checks">
+          <li>Buyer-focused product discussions</li>
+          <li>Quality and packaging coordination</li>
+          <li>Wholesale and seasonal supply enquiries</li>
+          <li>Transparent communication from enquiry to dispatch</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">What We Offer</div>
+        <h2>Our Products</h2>
+        <p>Contact us with your required grade, quantity and destination to discuss availability.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="card-icon">🍎</div><h3>Bhagwa Pomegranates</h3><p class="muted">Fresh pomegranates for wholesale, retail and export enquiries, subject to seasonal availability and buyer specifications.</p></article>
+        <article class="card"><div class="card-icon">🌿</div><h3>Agricultural Produce</h3><p class="muted">Enquire about other agricultural products and seasonal sourcing opportunities from Maharashtra.</p></article>
+        <article class="card"><div class="card-icon">📦</div><h3>Processed Raw Materials</h3><p class="muted">Discuss potential requirements for pomegranate peel, seeds or other materials, subject to availability and specifications.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="supply" class="about">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Wholesale • Domestic • International</div>
+        <h2>Supply & Export Enquiries</h2>
+        <p>Tell us what you need. We can discuss the product, quantity, packing and delivery requirements with you.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="card-icon">🌍</div><h3>International Buyers</h3><p class="muted">Importers and distributors can share their destination market and import requirements.</p></article>
+        <article class="card"><div class="card-icon">🤝</div><h3>Wholesale Buyers</h3><p class="muted">Retail chains, wholesalers and traders are welcome to request current availability and quotations.</p></article>
+        <article class="card"><div class="card-icon">🚚</div><h3>Packaging & Logistics</h3><p class="muted">Packaging, dispatch and delivery terms can be discussed based on the order and destination.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Looking for a dependable agricultural supply partner?</h2>
+      <p>Share your product requirements and let us start a conversation.</p>
+      <a class="btn btn-gold" href="https://wa.me/918275677594?text=Hello%20SINDHAAI%20ENTERPRISES%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Get in Touch</div>
+        <h2>Contact Us</h2>
+        <p>Send your enquiry. We will use your details to respond about your requirements.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 style="color:var(--maroon)">SINDHAAI ENTERPRISES</h3>
+          <p><strong>Location:</strong> Khanapur, Sangli, Maharashtra, India</p>
+          <p><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/918275677594" target="_blank" rel="noopener">+91 82756 77594</a></p>
+          <p><strong>Email:</strong> <a href="mailto:sindhaaienterprises@gmail.com">sindhaaienterprises@gmail.com</a></p>
+          <p class="note">Please replace the placeholders with your confirmed business contact details before publishing.</p>
+        </div>
+        <form id="enquiryForm">
+          <input id="customerName" type="text" placeholder="Your name" required>
+          <input id="customerEmail" type="email" placeholder="Your email address" required>
+          <input id="customerCountry" type="text" placeholder="Country / City">
+          <select id="product" required>
+            <option value="">Select product</option>
+            <option>Bhagwa Pomegranates</option><option>Agricultural Produce</option><option>Pomegranate Peel / Seeds</option><option>Other</option>
+          </select>
+          <textarea id="message" placeholder="Please describe your quantity, quality, packaging and delivery requirements" required></textarea>
+          <button class="btn btn-gold submit" type="submit">Prepare Email Enquiry</button>
+          <p class="note">This starter form opens your email application. A live form that stores enquiries will need an email/form service.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">© <span id="year"></span> SINDHAAI ENTERPRISES. All rights reserved. | From Nature to Your Home.</div>
+</footer>
+<script>
+  const menuButton = document.getElementById('menuButton');
+  const mainNav = document.getElementById('mainNav');
+  menuButton.addEventListener('click', () => mainNav.classList.toggle('open'));
+  mainNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mainNav.classList.remove('open')));
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.getElementById('enquiryForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('customerName').value.trim();
+    const email = document.getElementById('customerEmail').value.trim();
+    const country = document.getElementById('customerCountry').value.trim();
+    const product = document.getElementById('product').value;
+    const message = document.getElementById('message').value.trim();
+    const subject = encodeURIComponent('Website enquiry - ' + product);
+    const body = encodeURIComponent(
+      'Name: ' + name + '\\nEmail: ' + email + '\\nCountry/City: ' + country +
+      '\\nProduct: ' + product + '\\nRequirements: ' + message
+    );
+    // Replace the placeholder below with your confirmed business email address.
+    window.location.href = 'mailto:sindhaaienterprises@gmail.com?subject=' + subject + '&body=' + body;
+  });
+</script>
+</body>
+</html>
